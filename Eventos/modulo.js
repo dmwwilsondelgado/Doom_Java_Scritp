@@ -111,7 +111,10 @@ export const validamos = (recibir) => {
     })
 
     // validamos que tengmos almenos un campo selecionado 
+    const checkbox = [...campos].filter((elemento)=> elemento.type === 'checkbox');
+    
     const campo_radio  =  radios.find((radio)=> radio.checked) || [];
+
     console.log(campo_radio);
 
     const campos_checkbox = checkbox.filter((elemento)=>elemento.checked);

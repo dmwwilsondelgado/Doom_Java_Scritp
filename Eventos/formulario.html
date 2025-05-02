@@ -36,16 +36,26 @@
                   <option value="4">floridablanca</option>
                 </select>
               </div>
-              <div class="Lenguajes">
+              <div class="error">
                 <label for="Lenguajes">Lenguajes de Programacion a usar</label>
-                <input type="checkbox" name="Java" id="1">
-                <input type="checkbox" name="Phyton" id="1">
-                <input type="checkbox" name="Ruby" id="1">
-                <input type="checkbox" name="React" id="1">
-                <input type="checkbox" name="CSS" id="1">
-                <input type="checkbox" name="Html" id="1">
-                <input type="checkbox" name="SQL" id="1">
-                <input type="checkbox" name="Java" id="1">
+              <div class="Lenguajes">
+                <div class="check_list">
+                  <label for="1">Java</label>
+                  <input type="checkbox" name="lenguaje[]" id="Java" value="1">
+                </div>
+                <div class="check_list">
+                  <label for="1">Python</label>
+                  <input type="checkbox" name="lenguaje[]" id="Py" value="2">
+                </div>
+                <div class="check_list">
+                  <label for="1">C#</label>
+                  <input type="checkbox" name="lenguaje[]" id="C#" value="3">
+                </div>
+                <div class="check_list">
+                  <label for="1">JavaScript</label>
+                  <input type="checkbox" name="lenguaje[]" id="js" value="4">
+                </div>
+              </div>
               </div>
               <div class="error">
                 <input type="number" name="documento" placeholder="Documento" />
@@ -71,8 +81,10 @@
                 </div>
               </div>
               <div class="error">
-                <input type="checkbox"  id="politicas" />
-                <label for="politicas">Acepto politicas de Privacidad</label>
+                <div class="validar_politicas">
+                  <input  type="checkbox"  id="politicas" />
+                  <label for="politicas">Acepto politicas de Privacidad</label>
+                </div>
               </div>
               <button type="submit" name="boton" id="btn_validar" disabled>Validar</button>
             </form>
@@ -80,7 +92,6 @@
         </div>
       </section>
     </main>
-    
     <script type="module" src="app.js"></script>
   </body>
 </html>

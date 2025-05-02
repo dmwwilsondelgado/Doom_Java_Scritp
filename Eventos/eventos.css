@@ -15,6 +15,7 @@
   --max-width: 1400px;
   --padding: 10px;
   --margin: 10px;
+  --margin-left: 20%;
 }
 
 ::selection {
@@ -202,15 +203,16 @@ textarea {
   color: #000;
 }
 
-
-
-
 .check_list{
   display: flex;
   justify-content: space-around;
 }
 
-.error{
-  jsu
-  display: inline-flex;
+.validar_politicas{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin: var(--margin) auto; */
+  flex-direction: row-reverse;
+  margin-left: 20%;
 }
