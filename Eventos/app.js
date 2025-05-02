@@ -1,4 +1,4 @@
-import { esvalido } from "./modulo.js";
+import { validamos } from "./modulo.js";
 
 // let btn = document.querySelector('#btn_validar');
 const formulario = document.querySelector("form");
