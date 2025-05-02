@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="eventos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Eventos</h1>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="card">
+            <h2 class="center">Ingrese su datos de usuario</h2>
+            <form>
+              <div class="error">
+                <input type="text" name="nombre" placeholder="Nombre" />
+              </div>
+              <div class="error">
+                <input type="text" name="apellido" placeholder="Apellido" />
+              </div>
+              <div class="error">
+                <input type="tel" name="telefono" placeholder="Telefono" />
+              </div>
+              <div class="error">
+                <select>
+                  <option>Seleccione</option>
+                  <option value="1">Bucaramanga</option>
+                  <option value="2">Giron</option>
+                  <option value="3">Pidecuesta</option>
+                  <option value="4">floridablanca</option>
+                </select>
+              </div>
+              <div class="error">
+                <input type="number" name="documento" placeholder="Documento" />
+              </div>
+              <div class="error">
+                <input type="text" name="usuario" placeholder="Usuario" />
+              </div>
+              <div class="error">
+                <input
+                  type="password"
+                  name="contraseña"
+                  placeholder="Contraseña"
+                />
+              </div>
+              <div class="genero">
+                <label for="genero">Hombre</label>
+                <input type="radio" name="genero" id="hombre" required/>
+                <label for="genero">Mujer</label>
+                <input type="radio" name="genero" id="mujer" required/>
+              </div>
+              <div class="error">
+                <input type="checkbox"  id="politicas" />
+                <label for="politicas">Acepto politicas de Privacidad</label>
+              </div>
+              <button type="submit" name="boton" id="btn_validar" disabled>Validar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
