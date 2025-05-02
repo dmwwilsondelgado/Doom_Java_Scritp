@@ -121,7 +121,7 @@ export const validamos = (recibir) => {
     if (campos_checkbox.length > 3){
         obj[checkbox[0].name] = "";
     }else{
-        // se le asigna el valor de los checkbox seleccionados
+        obj[checkbox[0].name] = [...campos_checkbox].map((elemento)=>elemento.value);
     }
 
     // de no tener un campo de tipo radio selecionado se le agrega la clase error y se le muestra un mensaje de alerta
