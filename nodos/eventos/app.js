@@ -1,8 +1,7 @@
 //variables
+// import { event } from 'jquery';
+
 const btn = document.querySelector('#btn_validar');
-
-
-
 const formulario = document.querySelector('form');
 const nombre = document.querySelector('[name = "Nombre"]');
 const password = document.querySelector('[name = "Contraseña"]');
@@ -40,7 +39,7 @@ const validar = () => {
 
 
 formulario.addEventListener('submit', validar);
-
+formulario.addEventListener('', nombre);
 //escucha el evento click del boton
 // btn.addEventListener('submit', () => {
 //     event.preventDefault(); // previene el comportamiento por defecto del formulario
