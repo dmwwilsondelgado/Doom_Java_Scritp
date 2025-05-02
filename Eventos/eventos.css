@@ -222,9 +222,6 @@ textarea {
 
 .validar_politicas{
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin: var(--margin) auto; */
   flex-direction: row-reverse;
   margin-left: 20%;
 }
