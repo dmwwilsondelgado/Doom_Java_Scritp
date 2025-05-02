@@ -112,8 +112,14 @@ export const validamos = (recibir) => {
 
     // validamos que tengmos almenos un campo selecionado 
     const campo_radio  =  radios.find((radio)=> radio.checked) || [];
-
     console.log(campo_radio);
+
+    const campos_checkbox = checkbox.filter((elemento)=>elemento.checked);
+    if (campos_checkbox.length > 3){
+        obj[checkbox[0].name] = "";
+    }else{
+        // se le asigna el valor de los checkbox seleccionados
+    }
 
     // de no tener un campo de tipo radio selecionado se le agrega la clase error y se le muestra un mensaje de alerta
     if (campo_radio.length === 0) {

@@ -203,3 +203,14 @@ textarea {
 }
 
 
+
+
+.check_list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.error{
+  jsu
+  display: inline-flex;
+}

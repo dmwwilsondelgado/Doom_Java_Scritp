@@ -187,3 +187,4 @@ usuario.addEventListener("blur", limpiar);
 contraseña.addEventListener("blur", limpiar);
 ciudad.addEventListener("change", limpiar);
 
+console.log(validamos);
